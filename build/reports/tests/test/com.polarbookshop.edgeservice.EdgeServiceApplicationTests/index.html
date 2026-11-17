@@ -31,6 +31,9 @@
 <li>
 <a class="" href="#">standard output</a>
 </li>
+<li>
+<a class="" href="#">error output</a>
+</li>
 </ul>
 <div class="tab">
 <h2>summary</h2>
@@ -62,7 +65,7 @@
 </td>
 <td>
 <div class="infoBox duration">
-<div class="counter">4.463s</div>
+<div class="counter">4.759s</div>
 <p>duration</p>
 </div>
 </td>
@@ -93,14 +96,12 @@
 </thead>
 <tbody>
 <tr>
-<td class="success">
-<a href="verifyThatSpringContextLoads().html">verifyThatSpringContextLoads()</a>
-</td>
+<td class="success">verifyThatSpringContextLoads()</td>
 <td class="path" hidden="">verifyThatSpringContextLoads()</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
-<td data-sort-value="401">0.401s</td>
+<td data-sort-value="35">0.035s</td>
 <td class="success" data-sort-value="100">100%</td>
 </tr>
 </tbody>
@@ -113,30 +114,31 @@
 <div class="clipboard-copy-btn-container">
 <button class="clipboard-copy-btn" aria-label="Copy to clipboard" data-copy-element-id="root-0-test-stdout-com.polarbookshop.edgeservice.EdgeServiceApplicationTests">Copy</button>
 </div>
-<pre id="root-0-test-stdout-com.polarbookshop.edgeservice.EdgeServiceApplicationTests">00:14:36.686 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.polarbookshop.edgeservice.EdgeServiceApplicationTests]: EdgeServiceApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-00:14:36.768 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.polarbookshop.edgeservice.EdgeServiceApplication for test class com.polarbookshop.edgeservice.EdgeServiceApplicationTests
-00:14:36.844 [Test worker] INFO org.testcontainers.images.PullPolicy -- Image pull policy will be performed by: DefaultPullPolicy()
-00:14:36.847 [Test worker] INFO org.testcontainers.utility.ImageNameSubstitutor -- Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
-00:14:36.853 [Test worker] INFO org.testcontainers.DockerClientFactory -- Testcontainers version: 1.21.4
-00:14:37.142 [Test worker] INFO org.testcontainers.dockerclient.DockerClientProviderStrategy -- Found Docker environment with local Unix socket (unix:///var/run/docker.sock)
-00:14:37.146 [Test worker] INFO org.testcontainers.DockerClientFactory -- Docker host IP address is localhost
-00:14:37.169 [Test worker] INFO org.testcontainers.DockerClientFactory -- Connected to docker: 
+<pre id="root-0-test-stdout-com.polarbookshop.edgeservice.EdgeServiceApplicationTests">01:45:50.054 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.polarbookshop.edgeservice.EdgeServiceApplicationTests]: EdgeServiceApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+01:45:50.118 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.polarbookshop.edgeservice.EdgeServiceApplication for test class com.polarbookshop.edgeservice.EdgeServiceApplicationTests
+01:45:50.179 [Test worker] INFO org.testcontainers.images.PullPolicy -- Image pull policy will be performed by: DefaultPullPolicy()
+01:45:50.180 [Test worker] INFO org.testcontainers.utility.ImageNameSubstitutor -- Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
+01:45:50.188 [Test worker] INFO org.testcontainers.DockerClientFactory -- Testcontainers version: 1.21.4
+01:45:50.282 [Test worker] INFO org.testcontainers.dockerclient.DockerClientProviderStrategy -- Loaded org.testcontainers.dockerclient.UnixSocketClientProviderStrategy from ~/.testcontainers.properties, will try it first
+01:45:50.422 [Test worker] INFO org.testcontainers.dockerclient.DockerClientProviderStrategy -- Found Docker environment with local Unix socket (unix:///var/run/docker.sock)
+01:45:50.423 [Test worker] INFO org.testcontainers.DockerClientFactory -- Docker host IP address is localhost
+01:45:50.441 [Test worker] INFO org.testcontainers.DockerClientFactory -- Connected to docker: 
   Server Version: 29.8.2
   API Version: 1.56
   Operating System: Docker Desktop (containerized)
   Total Memory: 15746 MB
   Labels: 
     com.docker.desktop.address=unix:///var/run/docker-cli.sock
-00:14:37.401 [Test worker] INFO tc.testcontainers/ryuk:0.12.0 -- Creating container for image: testcontainers/ryuk:0.12.0
-00:14:37.469 [Test worker] INFO org.testcontainers.utility.RegistryAuthLocator -- Credential helper/store (docker-credential-desktop.exe) does not have credentials for https://index.docker.io/v1/
-00:14:37.594 [Test worker] INFO tc.testcontainers/ryuk:0.12.0 -- Container testcontainers/ryuk:0.12.0 is starting: 610b0928f171690bd7ca05467675457ff3a0a62fb017881ee1fb26253d4878a2
-00:14:37.871 [Test worker] INFO tc.testcontainers/ryuk:0.12.0 -- Container testcontainers/ryuk:0.12.0 started in PT0.470010218S
-00:14:37.876 [Test worker] INFO org.testcontainers.utility.RyukResourceReaper -- Ryuk started - will monitor and terminate Testcontainers containers on JVM exit
-00:14:37.876 [Test worker] INFO org.testcontainers.DockerClientFactory -- Checking the system...
-00:14:37.876 [Test worker] INFO org.testcontainers.DockerClientFactory -- ✔︎ Docker server version should be at least 1.6.0
-00:14:37.876 [Test worker] INFO tc.redis:7 -- Creating container for image: redis:7
-00:14:37.940 [Test worker] INFO tc.redis:7 -- Container redis:7 is starting: 9a70f140d4fbec49c2f44d3d0d64fd82cdbb6f6a1c888d544945997e3d3cb042
-00:14:38.225 [Test worker] INFO tc.redis:7 -- Container redis:7 started in PT0.348927786S
+01:45:50.667 [Test worker] INFO tc.testcontainers/ryuk:0.12.0 -- Creating container for image: testcontainers/ryuk:0.12.0
+01:45:50.734 [Test worker] INFO org.testcontainers.utility.RegistryAuthLocator -- Credential helper/store (docker-credential-desktop.exe) does not have credentials for https://index.docker.io/v1/
+01:45:50.845 [Test worker] INFO tc.testcontainers/ryuk:0.12.0 -- Container testcontainers/ryuk:0.12.0 is starting: b72fd385dca5132cd8e40c5dbf2e10e0138c48df134e0da1655ac71fcd45f026
+01:45:51.120 [Test worker] INFO tc.testcontainers/ryuk:0.12.0 -- Container testcontainers/ryuk:0.12.0 started in PT0.452847261S
+01:45:51.123 [Test worker] INFO org.testcontainers.utility.RyukResourceReaper -- Ryuk started - will monitor and terminate Testcontainers containers on JVM exit
+01:45:51.123 [Test worker] INFO org.testcontainers.DockerClientFactory -- Checking the system...
+01:45:51.123 [Test worker] INFO org.testcontainers.DockerClientFactory -- ✔︎ Docker server version should be at least 1.6.0
+01:45:51.124 [Test worker] INFO tc.redis:7 -- Creating container for image: redis:7
+01:45:51.185 [Test worker] INFO tc.redis:7 -- Container redis:7 is starting: b4c08c832d6281208c3669c816c5963ffa5718b471273c03ace46bdd40f1a139
+01:45:51.449 [Test worker] INFO tc.redis:7 -- Container redis:7 started in PT0.324998796S
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -147,50 +149,64 @@
 
  :: Spring Boot ::                (v3.5.9)
 
-2026-11-17T00:14:38.578Z  INFO 62541 --- [edge-service] [    Test worker] c.p.e.EdgeServiceApplicationTests        : Starting EdgeServiceApplicationTests using Java 21.0.13.0.3 with PID 62541 (started by patelnik0 in /home/patelnik0/projects/edge-service)
-2026-11-17T00:14:38.578Z  INFO 62541 --- [edge-service] [    Test worker] c.p.e.EdgeServiceApplicationTests        : No active profile set, falling back to 1 default profile: &quot;default&quot;
-2026-11-17T00:14:39.123Z DEBUG 62541 --- [edge-service] [    Test worker] i.g.r.s.u.AspectJOnClasspathCondition    : Aspects are not activated because AspectJ is not on the classpath.
-2026-11-17T00:14:39.123Z DEBUG 62541 --- [edge-service] [    Test worker] i.g.r.s.u.AspectJOnClasspathCondition    : Aspects are not activated because AspectJ is not on the classpath.
-2026-11-17T00:14:39.124Z DEBUG 62541 --- [edge-service] [    Test worker] i.g.r.s.u.RxJava2OnClasspathCondition    : RxJava2 related Aspect extensions are not activated, because RxJava2 is not on the classpath.
-2026-11-17T00:14:39.136Z DEBUG 62541 --- [edge-service] [    Test worker] i.g.r.s.u.AspectJOnClasspathCondition    : Aspects are not activated because AspectJ is not on the classpath.
-2026-11-17T00:14:39.137Z DEBUG 62541 --- [edge-service] [    Test worker] i.g.r.s.u.RxJava2OnClasspathCondition    : RxJava2 related Aspect extensions are not activated, because RxJava2 is not on the classpath.
-2026-11-17T00:14:39.137Z DEBUG 62541 --- [edge-service] [    Test worker] i.g.r.s.u.AspectJOnClasspathCondition    : Aspects are not activated because AspectJ is not on the classpath.
-2026-11-17T00:14:39.149Z DEBUG 62541 --- [edge-service] [    Test worker] i.g.r.s.u.AspectJOnClasspathCondition    : Aspects are not activated because AspectJ is not on the classpath.
-2026-11-17T00:14:39.149Z DEBUG 62541 --- [edge-service] [    Test worker] i.g.r.s.u.RxJava2OnClasspathCondition    : RxJava2 related Aspect extensions are not activated, because RxJava2 is not on the classpath.
-2026-11-17T00:14:39.150Z DEBUG 62541 --- [edge-service] [    Test worker] i.g.r.s.u.AspectJOnClasspathCondition    : Aspects are not activated because AspectJ is not on the classpath.
-2026-11-17T00:14:39.161Z DEBUG 62541 --- [edge-service] [    Test worker] i.g.r.s.u.AspectJOnClasspathCondition    : Aspects are not activated because AspectJ is not on the classpath.
-2026-11-17T00:14:39.161Z DEBUG 62541 --- [edge-service] [    Test worker] i.g.r.s.u.RxJava2OnClasspathCondition    : RxJava2 related Aspect extensions are not activated, because RxJava2 is not on the classpath.
-2026-11-17T00:14:39.161Z DEBUG 62541 --- [edge-service] [    Test worker] i.g.r.s.u.AspectJOnClasspathCondition    : Aspects are not activated because AspectJ is not on the classpath.
-2026-11-17T00:14:39.168Z DEBUG 62541 --- [edge-service] [    Test worker] i.g.r.s.u.AspectJOnClasspathCondition    : Aspects are not activated because AspectJ is not on the classpath.
-2026-11-17T00:14:39.168Z DEBUG 62541 --- [edge-service] [    Test worker] i.g.r.s.u.RxJava2OnClasspathCondition    : RxJava2 related Aspect extensions are not activated, because RxJava2 is not on the classpath.
-2026-11-17T00:14:39.168Z DEBUG 62541 --- [edge-service] [    Test worker] i.g.r.s.u.AspectJOnClasspathCondition    : Aspects are not activated because AspectJ is not on the classpath.
-2026-11-17T00:14:39.176Z DEBUG 62541 --- [edge-service] [    Test worker] i.g.r.s.u.AspectJOnClasspathCondition    : Aspects are not activated because AspectJ is not on the classpath.
-2026-11-17T00:14:39.176Z DEBUG 62541 --- [edge-service] [    Test worker] i.g.r.s.u.RxJava2OnClasspathCondition    : RxJava2 related Aspect extensions are not activated, because RxJava2 is not on the classpath.
-2026-11-17T00:14:39.176Z DEBUG 62541 --- [edge-service] [    Test worker] i.g.r.s.u.AspectJOnClasspathCondition    : Aspects are not activated because AspectJ is not on the classpath.
-2026-11-17T00:14:39.184Z DEBUG 62541 --- [edge-service] [    Test worker] i.g.r.s.u.AspectJOnClasspathCondition    : Aspects are not activated because AspectJ is not on the classpath.
-2026-11-17T00:14:39.184Z DEBUG 62541 --- [edge-service] [    Test worker] i.g.r.s.u.RxJava2OnClasspathCondition    : RxJava2 related Aspect extensions are not activated, because RxJava2 is not on the classpath.
-2026-11-17T00:14:39.184Z DEBUG 62541 --- [edge-service] [    Test worker] i.g.r.s.u.AspectJOnClasspathCondition    : Aspects are not activated because AspectJ is not on the classpath.
-2026-11-17T00:14:39.308Z  INFO 62541 --- [edge-service] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
-2026-11-17T00:14:39.310Z  INFO 62541 --- [edge-service] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2026-11-17T00:14:39.337Z  INFO 62541 --- [edge-service] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
-2026-11-17T00:14:39.494Z  INFO 62541 --- [edge-service] [    Test worker] o.s.cloud.context.scope.GenericScope     : BeanFactory id=1f97c862-dfc7-33e7-a88a-093ca99694d3
-2026-11-17T00:14:40.056Z  INFO 62541 --- [edge-service] [    Test worker] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
-2026-11-17T00:14:40.056Z  INFO 62541 --- [edge-service] [    Test worker] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
-2026-11-17T00:14:40.056Z  INFO 62541 --- [edge-service] [    Test worker] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
-2026-11-17T00:14:40.056Z  INFO 62541 --- [edge-service] [    Test worker] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
-2026-11-17T00:14:40.057Z  INFO 62541 --- [edge-service] [    Test worker] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
-2026-11-17T00:14:40.057Z  INFO 62541 --- [edge-service] [    Test worker] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
-2026-11-17T00:14:40.057Z  INFO 62541 --- [edge-service] [    Test worker] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
-2026-11-17T00:14:40.057Z  INFO 62541 --- [edge-service] [    Test worker] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
-2026-11-17T00:14:40.057Z  INFO 62541 --- [edge-service] [    Test worker] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
-2026-11-17T00:14:40.057Z  INFO 62541 --- [edge-service] [    Test worker] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBody]
-2026-11-17T00:14:40.057Z  INFO 62541 --- [edge-service] [    Test worker] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
-2026-11-17T00:14:40.057Z  INFO 62541 --- [edge-service] [    Test worker] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [XForwardedRemoteAddr]
-2026-11-17T00:14:40.057Z  INFO 62541 --- [edge-service] [    Test worker] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
-2026-11-17T00:14:40.057Z  INFO 62541 --- [edge-service] [    Test worker] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
-2026-11-17T00:14:40.145Z  INFO 62541 --- [edge-service] [    Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
-2026-11-17T00:14:40.311Z  INFO 62541 --- [edge-service] [    Test worker] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 39315 (http)
-2026-11-17T00:14:40.381Z  INFO 62541 --- [edge-service] [    Test worker] c.p.e.EdgeServiceApplicationTests        : Started EdgeServiceApplicationTests in 1.997 seconds (process running for 4.327)
+2026-11-17T01:45:51.778Z  INFO 109531 --- [edge-service] [    Test worker] c.p.e.EdgeServiceApplicationTests        : Starting EdgeServiceApplicationTests using Java 21.0.13.0.3 with PID 109531 (started by patelnik0 in /home/patelnik0/projects/edge-service)
+2026-11-17T01:45:51.779Z  INFO 109531 --- [edge-service] [    Test worker] c.p.e.EdgeServiceApplicationTests        : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2026-11-17T01:45:52.318Z DEBUG 109531 --- [edge-service] [    Test worker] i.g.r.s.u.AspectJOnClasspathCondition    : Aspects are not activated because AspectJ is not on the classpath.
+2026-11-17T01:45:52.319Z DEBUG 109531 --- [edge-service] [    Test worker] i.g.r.s.u.AspectJOnClasspathCondition    : Aspects are not activated because AspectJ is not on the classpath.
+2026-11-17T01:45:52.319Z DEBUG 109531 --- [edge-service] [    Test worker] i.g.r.s.u.RxJava2OnClasspathCondition    : RxJava2 related Aspect extensions are not activated, because RxJava2 is not on the classpath.
+2026-11-17T01:45:52.327Z DEBUG 109531 --- [edge-service] [    Test worker] i.g.r.s.u.AspectJOnClasspathCondition    : Aspects are not activated because AspectJ is not on the classpath.
+2026-11-17T01:45:52.327Z DEBUG 109531 --- [edge-service] [    Test worker] i.g.r.s.u.RxJava2OnClasspathCondition    : RxJava2 related Aspect extensions are not activated, because RxJava2 is not on the classpath.
+2026-11-17T01:45:52.327Z DEBUG 109531 --- [edge-service] [    Test worker] i.g.r.s.u.AspectJOnClasspathCondition    : Aspects are not activated because AspectJ is not on the classpath.
+2026-11-17T01:45:52.339Z DEBUG 109531 --- [edge-service] [    Test worker] i.g.r.s.u.AspectJOnClasspathCondition    : Aspects are not activated because AspectJ is not on the classpath.
+2026-11-17T01:45:52.339Z DEBUG 109531 --- [edge-service] [    Test worker] i.g.r.s.u.RxJava2OnClasspathCondition    : RxJava2 related Aspect extensions are not activated, because RxJava2 is not on the classpath.
+2026-11-17T01:45:52.339Z DEBUG 109531 --- [edge-service] [    Test worker] i.g.r.s.u.AspectJOnClasspathCondition    : Aspects are not activated because AspectJ is not on the classpath.
+2026-11-17T01:45:52.347Z DEBUG 109531 --- [edge-service] [    Test worker] i.g.r.s.u.AspectJOnClasspathCondition    : Aspects are not activated because AspectJ is not on the classpath.
+2026-11-17T01:45:52.348Z DEBUG 109531 --- [edge-service] [    Test worker] i.g.r.s.u.RxJava2OnClasspathCondition    : RxJava2 related Aspect extensions are not activated, because RxJava2 is not on the classpath.
+2026-11-17T01:45:52.348Z DEBUG 109531 --- [edge-service] [    Test worker] i.g.r.s.u.AspectJOnClasspathCondition    : Aspects are not activated because AspectJ is not on the classpath.
+2026-11-17T01:45:52.352Z DEBUG 109531 --- [edge-service] [    Test worker] i.g.r.s.u.AspectJOnClasspathCondition    : Aspects are not activated because AspectJ is not on the classpath.
+2026-11-17T01:45:52.352Z DEBUG 109531 --- [edge-service] [    Test worker] i.g.r.s.u.RxJava2OnClasspathCondition    : RxJava2 related Aspect extensions are not activated, because RxJava2 is not on the classpath.
+2026-11-17T01:45:52.353Z DEBUG 109531 --- [edge-service] [    Test worker] i.g.r.s.u.AspectJOnClasspathCondition    : Aspects are not activated because AspectJ is not on the classpath.
+2026-11-17T01:45:52.360Z DEBUG 109531 --- [edge-service] [    Test worker] i.g.r.s.u.AspectJOnClasspathCondition    : Aspects are not activated because AspectJ is not on the classpath.
+2026-11-17T01:45:52.360Z DEBUG 109531 --- [edge-service] [    Test worker] i.g.r.s.u.RxJava2OnClasspathCondition    : RxJava2 related Aspect extensions are not activated, because RxJava2 is not on the classpath.
+2026-11-17T01:45:52.360Z DEBUG 109531 --- [edge-service] [    Test worker] i.g.r.s.u.AspectJOnClasspathCondition    : Aspects are not activated because AspectJ is not on the classpath.
+2026-11-17T01:45:52.367Z DEBUG 109531 --- [edge-service] [    Test worker] i.g.r.s.u.AspectJOnClasspathCondition    : Aspects are not activated because AspectJ is not on the classpath.
+2026-11-17T01:45:52.368Z DEBUG 109531 --- [edge-service] [    Test worker] i.g.r.s.u.RxJava2OnClasspathCondition    : RxJava2 related Aspect extensions are not activated, because RxJava2 is not on the classpath.
+2026-11-17T01:45:52.368Z DEBUG 109531 --- [edge-service] [    Test worker] i.g.r.s.u.AspectJOnClasspathCondition    : Aspects are not activated because AspectJ is not on the classpath.
+2026-11-17T01:45:52.456Z  INFO 109531 --- [edge-service] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-11-17T01:45:52.458Z  INFO 109531 --- [edge-service] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-11-17T01:45:52.480Z  INFO 109531 --- [edge-service] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+2026-11-17T01:45:52.651Z  INFO 109531 --- [edge-service] [    Test worker] o.s.cloud.context.scope.GenericScope     : BeanFactory id=56d76ded-c95b-3460-8f2d-bd33484b5eb1
+2026-11-17T01:45:56.722Z  INFO 109531 --- [edge-service] [    Test worker] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
+2026-11-17T01:45:56.722Z  INFO 109531 --- [edge-service] [    Test worker] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
+2026-11-17T01:45:56.722Z  INFO 109531 --- [edge-service] [    Test worker] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
+2026-11-17T01:45:56.723Z  INFO 109531 --- [edge-service] [    Test worker] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
+2026-11-17T01:45:56.723Z  INFO 109531 --- [edge-service] [    Test worker] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
+2026-11-17T01:45:56.723Z  INFO 109531 --- [edge-service] [    Test worker] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
+2026-11-17T01:45:56.723Z  INFO 109531 --- [edge-service] [    Test worker] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
+2026-11-17T01:45:56.723Z  INFO 109531 --- [edge-service] [    Test worker] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
+2026-11-17T01:45:56.723Z  INFO 109531 --- [edge-service] [    Test worker] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
+2026-11-17T01:45:56.723Z  INFO 109531 --- [edge-service] [    Test worker] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBody]
+2026-11-17T01:45:56.723Z  INFO 109531 --- [edge-service] [    Test worker] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
+2026-11-17T01:45:56.723Z  INFO 109531 --- [edge-service] [    Test worker] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2026-11-17T01:45:56.723Z  INFO 109531 --- [edge-service] [    Test worker] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
+2026-11-17T01:45:56.723Z  INFO 109531 --- [edge-service] [    Test worker] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2026-11-17T01:45:56.838Z  INFO 109531 --- [edge-service] [    Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-11-17T01:45:57.053Z  INFO 109531 --- [edge-service] [    Test worker] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 36151 (http)
+2026-11-17T01:45:57.138Z  INFO 109531 --- [edge-service] [    Test worker] c.p.e.EdgeServiceApplicationTests        : Started EdgeServiceApplicationTests in 5.569 seconds (process running for 5.025)
+</pre>
+</span>
+</div>
+<div class="tab">
+<h2>error output</h2>
+<span class="code">
+<div class="clipboard-copy-btn-container">
+<button class="clipboard-copy-btn" aria-label="Copy to clipboard" data-copy-element-id="root-0-test-stderr-com.polarbookshop.edgeservice.EdgeServiceApplicationTests">Copy</button>
+</div>
+<pre id="root-0-test-stderr-com.polarbookshop.edgeservice.EdgeServiceApplicationTests">Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build as described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org.mockito/org/mockito/Mockito.html#0.3
+WARNING: A Java agent has been loaded dynamically (/home/patelnik0/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy-agent/1.17.8/f09415827a71be7ed621c7bd02550678f28bc81c/byte-buddy-agent-1.17.8.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
 </pre>
 </span>
 </div>
@@ -204,7 +220,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="https://www.gradle.org">Gradle 9.9.1</a> at Nov 17, 2026, 12:14:43 AM</p>
+<a href="https://www.gradle.org">Gradle 9.9.1</a> at Nov 17, 2026, 1:46:00 AM</p>
 </div>
 </div>
 </body>

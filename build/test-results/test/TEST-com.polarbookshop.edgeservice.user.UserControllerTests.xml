@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.polarbookshop.edgeservice.user.UserControllerTests" tests="2" skipped="0" failures="0" errors="0" timestamp="2026-11-17T01:45:55.040Z" hostname="NPC" time="0.233">
+  <properties/>
+  <testcase name="whenAuthenticatedThenReturnUser()" classname="com.polarbookshop.edgeservice.user.UserControllerTests" time="0.096"/>
+  <testcase name="whenNotAuthenticatedThen401()" classname="com.polarbookshop.edgeservice.user.UserControllerTests" time="0.009"/>
+  <system-out><![CDATA[2026-11-17T01:45:57.766Z  INFO 109531 --- [edge-service] [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.polarbookshop.edgeservice.user.UserControllerTests]: UserControllerTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-11-17T01:45:57.772Z  INFO 109531 --- [edge-service] [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.polarbookshop.edgeservice.EdgeServiceApplication for test class com.polarbookshop.edgeservice.user.UserControllerTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.5.9)
+
+2026-11-17T01:45:57.798Z  INFO 109531 --- [edge-service] [    Test worker] c.p.e.user.UserControllerTests           : Starting UserControllerTests using Java 21.0.13.0.3 with PID 109531 (started by patelnik0 in /home/patelnik0/projects/edge-service)
+2026-11-17T01:45:57.798Z  INFO 109531 --- [edge-service] [    Test worker] c.p.e.user.UserControllerTests           : No active profile set, falling back to 1 default profile: "default"
+2026-11-17T01:45:57.892Z  INFO 109531 --- [edge-service] [    Test worker] c.p.e.user.UserControllerTests           : Started UserControllerTests in 0.118 seconds (process running for 5.78)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
